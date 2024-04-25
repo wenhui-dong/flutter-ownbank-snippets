@@ -1,0 +1,28 @@
+{
+  "name": "flutter-ownbank-snippets",
+  "displayName": "flutter ownbank snippets",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.24.0"
+  },
+  "icon": "images/icon-on.png",
+  "publisher": "wenhui.dong",
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "dart",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  },
+  "keywords": [
+    "dart",
+    "snippet",
+    "flutter",
+    "widgets"
+  ]
+}
