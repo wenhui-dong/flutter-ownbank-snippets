@@ -3,11 +3,16 @@
   "displayName": "flutter ownbank snippets",
   "description": "",
   "version": "0.0.1",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.24.0"
   },
   "icon": "images/icon-on.png",
   "publisher": "wenhui.dong",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wenhui-dong/flutter-ownbank-snippets.git"
+  },
   "categories": [
     "Snippets"
   ],
