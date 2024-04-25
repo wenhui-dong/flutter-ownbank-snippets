@@ -1,0 +1,97 @@
+{
+  "BasePageV2Widget page snippet": {
+    "prefix": "obpage",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "import 'package:dependencies/ob_flutter_libraries/ob_flutter_libraries.dart';",
+      "",
+      "",
+      "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} extends BasePageV2Widget {",
+      "  const ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}({ Key? key }) : super(key: key);",
+      "",
+      "  @override",
+      "  BasePageV2WidgetState<${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}> getState() => _${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}State();",
+      "}",
+      "",
+      "class _${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}State extends BasePageV2WidgetState<${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}> {",
+      "",
+      "  @override",
+      "  void initData() {}",
+      "",
+      "  @override",
+      "  void onRetry() {}",
+      "",
+      "  @override",
+      "  Widget buildWidget(BuildContext context) {",
+      "    return Container(",
+      "      $2",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "BasePageV2Widget page snippet"
+  },
+  "Mobx store snippet": {
+    "prefix": "obmstore",
+    "body": [
+      "import 'package:dependencies/ob_flutter_libraries/ob_flutter_libraries.dart';",
+      "part '${TM_FILENAME_BASE/(.*)/${1:/downcase}/}.g.dart';",
+      "",
+      "",
+      "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} = _${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} with _$${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/};",
+      "",
+      "abstract class _${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} with Store {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "Mobx store snippet"
+  },
+  "JsonSerializableum model snippet": {
+    "prefix": "obmjs",
+    "body": [
+      "import 'package:dependencies/json_annotation/json_annotation.dart';",
+      "part '${TM_FILENAME_BASE/(.*)/${1:/downcase}/}.g.dart';",
+      "",
+      "@JsonSerializable(createToJson: false)",
+      "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} {",
+      "",
+      "\t${0}",
+      "  ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}();",
+      "",
+      "  factory ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}.fromJson(Map<String, dynamic> json) => _$${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}FromJson(json);",
+      "}",
+    ],
+    "description": "JsonSerializable model snippet"
+  },
+  "JsonSerializableum Enum snippet": {
+    "prefix": "obejs",
+    "body": [
+      "import 'package:dependencies/json_annotation/json_annotation.dart';",
+      "",
+      "@JsonEnum(valueField: \"value\")",
+      "enum ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}Enum {",
+      "",
+      "  ${0}",
+      "",
+      "  const ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}Enum(this.value);",
+      "",
+      "  final String value;",
+      "}"
+    ],
+    "description": "JsonSerializableum Enum snippet"
+  },
+  "Enum snippet": {
+    "prefix": "obenum",
+    "body": [
+      "enum ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}Enum {",
+      "",
+      "  ${0}",
+      "",
+      "  const ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}Enum(this.value);",
+      "",
+      "  final String value;",
+      "}"
+    ],
+    "description": "Enum snippet"
+  },
+}
