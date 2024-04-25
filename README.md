@@ -2,7 +2,7 @@
 
 # flutter-ownbank-snippets README
 
-![snippets in action](images/snippets.gif)
+![snippets in action](https://github.com/wenhui-dong/flutter-ownbank-snippets/blob/main/images/snippets.gif?raw=true)
 
 ### Snippets
 
